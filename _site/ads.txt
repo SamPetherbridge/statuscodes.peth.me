@@ -1,0 +1,3 @@
+# httpstatus.xyz/ads.txt
+#
+# No ads

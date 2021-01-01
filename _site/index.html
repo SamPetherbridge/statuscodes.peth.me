@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTTPStatus.xyz | A simple status code generator</title>
+        <meta property="og:title" content="HTTPStatus.xyz | A simple status code generator">
+        <meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1, index, follow" />
+        <meta name="description" content="Free to use, highly responsive service returning HTTP status codes. HTTPStatus.xyz is designed to aid in the development and testing of new scripts.">
+        <meta property="og:description" content="Free to use, highly responsive service returning HTTP status codes. HTTPStatus.xyz is designed to aid in the development and testing of new scripts.">
+        <link rel="canonical" href="https://httpstatus.xyz/">
+        <meta property="og:url" content="https://httpstatus.xyz/">
+        <meta property="og:locale" content="en_US">
+        <meta property="og:site_name" content="HTTPStatus.xyz">
+        <meta property="og:image" content="https://httpstatus.xyz/httpstatus-xyz.jpeg">
+        <meta property="og:image:type" content="image/jpeg" />
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="627">
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:creator" content="@MrSamPeth">
+        <meta property="twitter:title" content="HTTPStatus.xyz | A simple status code generator.">
+        <meta property="twitter:description" content="Free to use, highly responsive service returning HTTP status codes. HTTPStatus.xyz is designed to aid in the development and testing of new scripts.">
+        <meta property="twitter:image" content="https://httpstatus.xyz/httpstatus-xyz.jpeg">
+        <meta name="msvalidate.01" content="8DF8C6C36A91FB2DACF544F7B20B70E8" />
+        <style>
+            body {
+                background-color: #fff;
+                color: #222222;
+                margin: 0;
+                padding: 0;
+
+                font-family: 'HelveticaNeue-Light', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 1.125em;
+
+                border-top: 3.5px solid #1A5C71;
+                word-wrap: break-word;
+                -webkit-text-size-adjust: 100%;
+            }
+
+            #headerbg {
+                height: 75px;
+                margin-bottom: -75px;
+                background-color: #81ADBB;
+            }
+
+            a, a:active, a:visited {
+                color: #81ADBB;
+            }
+
+            h1, h2, h3, h4, h5, h6 {
+                color: #1A5C71;
+            }
+
+            /* Headder Branding */
+            #headderbrand {
+                font-size: 0.9em;
+                color: #ffffff;
+                padding-bottom: 50px;
+            }
+
+            #headderbrand h1 {
+                font-weight: normal;
+                font-size: 2em;
+                margin-top: 0;
+                padding-top: 0.5em;
+                margin-bottom: 0.25em;
+                color: #ffffff;
+            }
+
+            #headderbrand a,
+            #headderbrand a:active,
+            #headderbrand a:visited { color: #ffffff; }
+
+            #headderbrand h1 a,
+            #headderbrand h1 a:active,
+            #headderbrand h1 a:visited {
+                color: #fff;
+                text-decoration: none;
+            }
+
+            #headderbrand p { margin: 0; padding: 0; }
+
+            /* Block layout */
+
+            #headderbrand {
+
+                padding-top: 0;
+                margin-top: 0;
+            }
+
+            footer {
+                margin: 2em 0;
+                font-size: 13px;
+            }
+
+            footer p { margin: 0.5em; }
+
+            footer a {
+                color: #222222;
+                text-decoration: none;
+            }
+
+            main, header {
+                position: relative;
+                display: block;
+                width: 900px;
+                margin: 0 auto;
+            }
+
+            h2 {
+                font-size: 1.5em;
+                margin-bottom: 0;
+                line-height: 1.25;
+                font-weight: 500;
+            }
+
+            h3 {
+                font-size: 1.25em;
+                font-weight: 400;
+                margin-top: 2em;
+                margin-bottom: 1em;
+            }
+
+            .statuscodelink {
+                padding-right: 5px;
+            }
+
+            /* Dark Mode */
+
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-color: black;
+                    color: #ccc;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div id="headerbg"> </div>
+        <header id="headderbrand" role="banner">
+            <div>
+                <h1><a href="/">HTTPStatus.xyz</a></h1>
+            </div>
+        </header>
+        <main>
+            <main role="main">
+                <div>
+                    <h2>Why does HTTPStatus.xyz exist?</h2>
+                    <p>HTTPStatus.xyz is was a project designed to understand the ins and outs of Cloudflare Workers, their capabilities and continuous deployment from GitHub. While there are other services, I do not believe there are any that are as responsive globally as HTTPStatus.xyz, due to the deployment of the site on the edge of Cloudflare's network.</p>
+                </div>
+                <div>
+                    <h2>Making A Request</h2>
+                    <p>To make a request simply add the status code to the end of the url, for example <a href="https://httpstatus.xyz/200">https://httpstatus.xyz/200</a>.</p>
+                    <p>By default a GET request will return a body with the status code name, i.e. "200 OK". If you would like no body returned simply add ?body=flase to the end of the url, for example <a href="https://httpstatus.xyz/200?body=flase">https://httpstatus.xyz/200?body=flase</a></p>
+                    <h3>Random Response</h3>
+                    <p>When building applications they must be able to deal with an unexpected response. For this reason there there is a 'random' request type. </p>
+                </div>
+                <div>
+                    <h2>Supported Request Types</h2>
+                    <p>HTTPStatus.xyz supports GET, POST, PUT, PATCH, DELETE, COPY, HEAD, OPTIONS, LOCK, UNLOCK and PROPFIND request types.</p>
+                </div>
+                <div>
+                    <h2>Supported Status Codes</h2>
+                    <p><span class="statuscodelink"><a href="/200" rel="nofollow">200</a></span>OK</p>
+                    <p><span class="statuscodelink"><a href="/201" rel="nofollow">201</a></span>CREATED</p>
+                    <p><span class="statuscodelink"><a href="/202" rel="nofollow">202</a></span>Accepted</p>
+                    <p><span class="statuscodelink"><a href="/203" rel="nofollow">203</a></span>Non-Authoritative Information</p>
+                    <p><span class="statuscodelink"><a href="/204" rel="nofollow">204</a></span>No Content</p>
+                    <p><span class="statuscodelink"><a href="/205" rel="nofollow">205</a></span>Reset Content</p>
+                    <p><span class="statuscodelink"><a href="/206" rel="nofollow">206</a></span>Partial Content</p>
+                    <p><span class="statuscodelink"><a href="/207" rel="nofollow">207</a></span>Multi-Status</p>
+                    <p><span class="statuscodelink"><a href="/208" rel="nofollow">208</a></span>Already Reported</p>
+                    <p><span class="statuscodelink"><a href="/226" rel="nofollow">226</a></span>IM Used</p>
+                    <p><span class="statuscodelink"><a href="/300" rel="nofollow">300</a></span>Multiple Choices</p>
+                    <p><span class="statuscodelink"><a href="/301" rel="nofollow">301</a></span>Moved Permanently</p>
+                    <p><span class="statuscodelink"><a href="/302" rel="nofollow">302</a></span>Found</p>
+                    <p><span class="statuscodelink"><a href="/303" rel="nofollow">303</a></span>See Other</p>
+                    <p><span class="statuscodelink"><a href="/304" rel="nofollow">304</a></span>Not Modified</p>
+                    <p><span class="statuscodelink"><a href="/307" rel="nofollow">307</a></span>Temporary Redirect</p>
+                    <p><span class="statuscodelink"><a href="/308" rel="nofollow">308</a></span>Permanent Redirect</p>
+                    <p><span class="statuscodelink"><a href="/400" rel="nofollow">400</a></span>Bad Request</p>
+                    <p><span class="statuscodelink"><a href="/401" rel="nofollow">401</a></span>Unauthorized</p>
+                    <p><span class="statuscodelink"><a href="/402" rel="nofollow">402</a></span>Payment Required</p>
+                    <p><span class="statuscodelink"><a href="/403" rel="nofollow">403</a></span>Forbidden</p>
+                    <p><span class="statuscodelink"><a href="/404" rel="nofollow">404</a></span>Not Found</p>
+                    <p><span class="statuscodelink"><a href="/405" rel="nofollow">405</a></span>Method Not Allowed</p>
+                    <p><span class="statuscodelink"><a href="/406" rel="nofollow">406</a></span>Not Acceptable</p>
+                    <p><span class="statuscodelink"><a href="/407" rel="nofollow">407</a></span>Proxy Authentication Required</p>
+                    <p><span class="statuscodelink"><a href="/408" rel="nofollow">408</a></span>Request Timeout</p>
+                    <p><span class="statuscodelink"><a href="/409" rel="nofollow">409</a></span>Conflict</p>
+                    <p><span class="statuscodelink"><a href="/410" rel="nofollow">410</a></span>Gone</p>
+                    <p><span class="statuscodelink"><a href="/411" rel="nofollow">411</a></span>Length Required</p>
+                    <p><span class="statuscodelink"><a href="/412" rel="nofollow">412</a></span>Precondition Failed</p>
+                    <p><span class="statuscodelink"><a href="/413" rel="nofollow">413</a></span>Payload Too Large</p>
+                    <p><span class="statuscodelink"><a href="/414" rel="nofollow">414</a></span>URI Too Long</p>
+                    <p><span class="statuscodelink"><a href="/415" rel="nofollow">415</a></span>Unsupported Media Type</p>
+                    <p><span class="statuscodelink"><a href="/416" rel="nofollow">416</a></span>Range Not Satisfiable</p>
+                    <p><span class="statuscodelink"><a href="/417" rel="nofollow">417</a></span>Expectation Failed</p>
+                    <p><span class="statuscodelink"><a href="/418" rel="nofollow">418</a></span>I'm a teapot</p>
+                    <p><span class="statuscodelink"><a href="/421" rel="nofollow">421</a></span>Misdirected Request</p>
+                    <p><span class="statuscodelink"><a href="/422" rel="nofollow">422</a></span>Unprocessable Entity</p>
+                    <p><span class="statuscodelink"><a href="/423" rel="nofollow">423</a></span>Locked</p>
+                    <p><span class="statuscodelink"><a href="/424" rel="nofollow">424</a></span>Failed Dependency</p>
+                    <p><span class="statuscodelink"><a href="/425" rel="nofollow">425</a></span>Too Early</p>
+                    <p><span class="statuscodelink"><a href="/426" rel="nofollow">426</a></span>Upgrade Required</p>
+                    <p><span class="statuscodelink"><a href="/428" rel="nofollow">428</a></span>Precondition Required</p>
+                    <p><span class="statuscodelink"><a href="/429" rel="nofollow">429</a></span>Too Many Requests</p>
+                    <p><span class="statuscodelink"><a href="/431" rel="nofollow">431</a></span>Request Header Fields Too Large</p>
+                    <p><span class="statuscodelink"><a href="/451" rel="nofollow">451</a></span>Unavailable For Legal Reasons</p>
+                    <p><span class="statuscodelink"><a href="/500" rel="nofollow">500</a></span>Internal Server Error</p>
+                    <p><span class="statuscodelink"><a href="/501" rel="nofollow">501</a></span>Not Implemented</p>
+                    <p><span class="statuscodelink"><a href="/502" rel="nofollow">502</a></span>Bad Gateway</p>
+                    <p><span class="statuscodelink"><a href="/503" rel="nofollow">503</a></span>Service Unavailable</p>
+                    <p><span class="statuscodelink"><a href="/504" rel="nofollow">504</a></span>Gateway Timeout</p>
+                    <p><span class="statuscodelink"><a href="/505" rel="nofollow">505</a></span>HTTP Version Not Supported</p>
+                    <p><span class="statuscodelink"><a href="/506" rel="nofollow">506</a></span>Variant Also Negotiates</p>
+                    <p><span class="statuscodelink"><a href="/507" rel="nofollow">507</a></span>Insufficient Storage</p>
+                    <p><span class="statuscodelink"><a href="/508" rel="nofollow">508</a></span>Loop Detected</p>
+                    <p><span class="statuscodelink"><a href="/509" rel="nofollow">509</a></span>Bandwidth Limit Exceeded</p>
+                    <p><span class="statuscodelink"><a href="/510" rel="nofollow">510</a></span>Not Extended</p>
+                    <p><span class="statuscodelink"><a href="/511" rel="nofollow">511</a></span>Network Authentication Required</p>
+                    <p><span class="statuscodelink"><a href="/520" rel="nofollow">520</a></span>Origin Error</p>
+                    <p><span class="statuscodelink"><a href="/521" rel="nofollow">521</a></span>Web server is down</p>
+                    <p><span class="statuscodelink"><a href="/522" rel="nofollow">522</a></span>Connection timed out</p>
+                    <p><span class="statuscodelink"><a href="/523" rel="nofollow">523</a></span>Proxy Declined Request</p>
+                    <p><span class="statuscodelink"><a href="/524" rel="nofollow">524</a></span>A timeout occurred</p>
+                    <p><span class="statuscodelink"><a href="/525" rel="nofollow">525</a></span>SSL Handshake Failed</p>
+                    <p><span class="statuscodelink"><a href="/526" rel="nofollow">526</a></span>Invalid SSL Certificate</p>
+                    <p><span class="statuscodelink"><a href="/527" rel="nofollow">527</a></span>Railgun Error</p>
+                    <p><span class="statuscodelink"><a href="/530" rel="nofollow">530</a></span>Cloudflare - Error 530 is returned along with a 1xxx error.</p>
+                    <p><span class="statuscodelink"><a href="/598" rel="nofollow">598</a></span>Network read timeout error</p>
+                    <p><span class="statuscodelink"><a href="/599" rel="nofollow">599</a></span>Network connect timeout error</p>
+                </div>
+                <div>
+                    <h2>FAQs</h2>
+                    <h3>Why don't you support 1xx status codes?</h3>
+                    <p>HTTPStatus.xyz is run using Cloudflare Workers. Unfortunately they limit the allowed status code returns to 200-599. If a request is made to any 1xx pages a 501 Not Implemented status will be returned.</p>
+                    <h3>What monitoring is in place to ensure HTTPStatus.xyz is working correctly?</h3>
+                    <p>All endpoints on HTTPStatus.xyz are regularly tested to ensure it is returning the expected results, using <a href="https://www.postman.com">Postman</a>. All endpoints are tested at a minimum weekly, with some tested every 5 minutes.</p>
+                    <h3>Are requests tracked?</h3>
+                    <p>HTTPStatus.xyz is built on-top of Cloudflare Workers. Cloudflare provides limited analytics on the total number of request made, country and requests blocked. No tracking outside what is required by Cloudflare is conducted.</p>
+                    <h3>Are there any usage limitations?</h3>
+                    <p>There are no hard defined usage limitations for HTTPStatus.xyz. The services is hosted by Cloudflare and is thus subject to their normal protections.</p>
+                </div>
+        </main>
+        <footer style="text-align: center;">
+            <p>© 2011-2021 <a href="https://peth.me" rel="author">Sam Petherbridge</a></p>
+        </footer>
+    </body>
+</html>
