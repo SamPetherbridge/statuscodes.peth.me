@@ -1,0 +1,10 @@
+name = "httpstatus-xyz-prod"
+type = "webpack"
+account_id = "${{ secrets.CF_ACCOUNT_ID }}"
+workers_dev = false
+route = "httpstatus.xyz/*"
+zone_id = ${{ secrets.CF_ZONE_ID }}
+
+[site]
+bucket = "./_site"
+entry-point = "workers-site"
