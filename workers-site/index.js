@@ -65,6 +65,10 @@ function respondSecure(event) {
 
 function includeBody(event) {
   try {
+    // Check to see the request type is not head.
+    if (event.request.method === 'HEAD') {
+      return false
+    }
     let url = new URL(event.request.url);
     if (url.searchParams.has('body')) {
       if (url.searchParams.get('body') === 'true') {
