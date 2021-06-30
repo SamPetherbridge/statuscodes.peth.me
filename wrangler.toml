@@ -2,8 +2,8 @@ name = "httpstatus-xyz-prod"
 type = "webpack"
 account_id = "5bb62796e4ac364a01fc43eba5da2b5d"
 workers_dev = false
-route = "httpstatus.xyz/*"
-zone_id = "5a0317eca0e85fd48a8eb4ca880e99e2"
+route = "statuscodes.peth.me/*"
+zone_id = "f25fb4f007ec448822b7b88be63e7120"
 
 [site]
 bucket = "./_site"
