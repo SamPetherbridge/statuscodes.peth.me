@@ -28,7 +28,7 @@ jobs:
 
     - name: Navigate to repo
       run: cd $GITHUB_WORKSPACE
-    - uses: actions/setup-node@v3
+    - uses: actions/setup-node@v4
       with:
         node-version: '10.x'
     - name: Install deps
